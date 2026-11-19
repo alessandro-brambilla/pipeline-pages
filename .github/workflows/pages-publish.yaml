@@ -2,7 +2,7 @@ on:     #ese
   push:
     branches: [master]
 
-persmission:
+persmissions:
   contents: read
   pages: write
   id-token: write
@@ -11,7 +11,7 @@ persmission:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    enviroment:
+    environment:
       name: github-pages
     steps:
       - uses: actions/checkout@v4
